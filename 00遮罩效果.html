@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            overflow:hidden;
+            background:url("1.jpg");
+            background-size:cover;
+            position:relative;
+        }
+        .box{
+            width:100%;
+            height:2000px;
+            background-color:rgba(0,0,0,.5);
+            position:absolute;
+            display:none;
+        }
+        .inner{
+            height:400px;
+            width:500px;
+            background-color:#0094ff;
+            margin:200px 35%;
+            position:absolute;
+            border:1px solid #000;
+        }
+        .inner>span{
+            height:40px;
+            background-color:white;
+            color:black;
+            text-align:left;
+            line-height:40px;
+            display:block;
+            cursor: pointer;
+        }
+        body>span{
+            color:red;
+            font-weight:bold;
+            font-size:100px;
+        }
+    </style>
+</head>
+<body>
+<div class="box" id="box">
+    <div class="inner" id="inner">
+             <span>
+              欢迎注册
+             </span>
+    </div>
+</div>
+
+<span>登录页面！！！</span>
+</body>
+</html>
+<script>
+
+    document.getElementById('box').style.display="block";
+    //    setTimeout(function(){
+    //        document.getElementById('box').style.display="block";
+    //        var span=document.getElementsByTagName('span')[0];
+    //        var inner=document.getElementById('inner');
+    //        span.onmousedown= function(evt){
+    //            var e=evt||window.event;
+    //            var spanX= e.clientX;
+    //            var spanY=e.clientY;
+    //            document.onmousemove= function(evt1){
+    //                var ee=evt1||window.event;
+    //                console.log( ee.offsetX);
+    //                inner.style.left= ee.clientX-spanX+"px";
+    //                inner.style.top= ee.clientY-spanY+"px";
+    //                //          console.log(e.clientX - spanX);
+    //            }
+    //
+    //            document.onmouseup= function(){
+    //                document.onmousemove=null;
+    //                document.onmouseup=null;
+    //            }
+    //        }
+    //        span.onmouseout= function(){
+    //            document.onmousemove=null;
+    //            document.onmouseup=null;
+    //        }
+    //    },2000)
+
+
+
+</script>
